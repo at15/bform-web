@@ -1,6 +1,13 @@
 {
   "name": "bform-web",
   "version": "0.0.1",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
   "scripts": {
     "gulp": "gulp",
     "tsc": "tsc",
@@ -10,15 +17,19 @@
   },
   "dependencies": {
     "angular2": "2.0.0-beta.13",
+    "bootstrap": "^4.0.0-alpha.2",
     "es6-shim": "^0.35.0",
+    "ng2-bootstrap": "^1.0.10",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "zone.js": "0.6.6"
   },
   "devDependencies": {
+    "gulp": "latest",
+    "gulp-watch": "latest",
+    "gulp-sass": "latest",
     "typescript": "^1.8.9",
-    "typings": "^0.7.11",
-    "gulp": "latest"
+    "typings": "^0.7.11"
   },
   "repository": {
     "type": "git",
