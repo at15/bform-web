@@ -2,10 +2,30 @@
  * Created by at15 on 2016/4/6.
  */
 var gulp = require('gulp');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+
+var sassFiles = [
+    './src/app/main.scss',
+    './src/app/**/*.scss'
+];
+var sassOptions = {
+    errLogToConsole: true,
+    outputStyle: 'expanded'
+};
+var sassOutput = './src/assets';
 
 // npm run gulp mie, used for test if npm run can pass commandline arguments
 gulp.task('mie', function () {
     console.log('mie');
+});
+
+gulp.task('sass', function () {
+    return gulp
+        .src(sassFiles)
+        .pipe(sass(sassOptions).on('error', sass.logError))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest(sassOutput));
 });
 
 gulp.task('default', function () {
