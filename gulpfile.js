@@ -28,6 +28,14 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(sassOutput));
 });
 
+gulp.task('watch', function() {
+    return gulp
+        .watch(sassFiles, ['sass'])
+        .on('change', function(event) {
+            console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+        });
+});
+
 gulp.task('default', function () {
     console.log('This is the default gulp task.');
 });
