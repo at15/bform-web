@@ -2,6 +2,7 @@
   "name": "bform-web",
   "version": "0.0.1",
   "scripts": {
+    "gulp": "gulp",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
@@ -16,7 +17,8 @@
   },
   "devDependencies": {
     "typescript": "^1.8.9",
-    "typings": "^0.7.11"
+    "typings": "^0.7.11",
+    "gulp": "latest"
   },
   "repository": {
     "type": "git",

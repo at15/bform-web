@@ -18,3 +18,4 @@ It does not meet the best practices, but it can have things up and running and i
 ## Develop
 
 - `npm run postinstall` to install `typings`
+- use `npm run gulp` to use vendor `gulp` instead of global cli. 
