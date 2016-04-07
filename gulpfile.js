@@ -7,7 +7,8 @@ var autoprefixer = require('gulp-autoprefixer');
 
 var sassFiles = [
     './src/app/main.scss',
-    './src/app/**/*.scss'
+    './src/app/**/*.scss',
+    './src/app/style/vendor/*.scss'
 ];
 var sassOptions = {
     errLogToConsole: true,
@@ -28,10 +29,10 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(sassOutput));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
     return gulp
         .watch(sassFiles, ['sass'])
-        .on('change', function(event) {
+        .on('change', function (event) {
             console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
         });
 });
