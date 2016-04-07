@@ -19,3 +19,4 @@ It does not meet the best practices, but it can have things up and running and i
 
 - `npm run postinstall` to install `typings`
 - use `npm run gulp` to use vendor `gulp` instead of global cli. 
+- `npm start` to start lite server and watch file changes

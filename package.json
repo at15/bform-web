@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "gulp": "gulp",
-    "start": "concurrently \"npm run tsc:w\" \"npm run gulp watch\" ",
+    "lite": "lite-server -c src/config/lite-server.json",
+    "start": "concurrently \"npm run tsc:w\" \"npm run gulp watch\" \"npm run lite\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
@@ -31,6 +32,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "latest",
     "gulp-watch": "latest",
+    "lite-server": "^2.1.0",
     "systemjs": "0.19.25",
     "typescript": "^1.8.9",
     "typings": "^0.7.11"

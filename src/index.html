@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--FIXME: we use . instead of / because we need to user node_modules, and the hint for IDEA broke-->
-    <base href=".">
+    <base href="/">
     <meta charset="UTF-8">
     <!-- For bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,11 +10,12 @@
     <link rel="stylesheet" href="./assets/style/vendor/bootstrap.css">
     <link rel="stylesheet" href="./assets/style/main.css">
 
-    <script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="../node_modules/systemjs/dist/system.src.js"></script>
-    <script src="../node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
-    <script src="../node_modules/angular2/bundles/router.dev.js"></script>
+    <!--NOTE: we are using lite-server, so we omit the node module path, FIXME: this will not work in production -->
+    <script src="angular2/bundles/angular2-polyfills.js"></script>
+    <script src="systemjs/dist/system.src.js"></script>
+    <script src="rxjs/bundles/Rx.js"></script>
+    <script src="angular2/bundles/angular2.dev.js"></script>
+    <script src="angular2/bundles/router.dev.js"></script>
 
     <script>
         System.config({

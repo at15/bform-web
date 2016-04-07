@@ -1,0 +1,13 @@
+{
+  "port": 3000,
+  "files": [
+    "./src/assets/*.{html,css,js}",
+    "./src/index.html"
+  ],
+  "server": {
+    "baseDir": [
+      "./src",
+      "./node_modules"
+    ]
+  }
+}
