@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Bform</title>
+    <link rel="stylesheet" href="./assets/main.css">
+
+    <script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/main')
+                .then(null, console.error.bind(console));
+    </script>
 </head>
 <body>
+<div class="row">
+    <div class="col-lg-12">
+        <h1>asdasd</h1>
+        <table class="table">
+            <tr>
+                <td>a</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+            </tr>
+        </table>
+    </div>
+</div>
 
 </body>
 </html>

@@ -31,6 +31,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "latest",
     "gulp-watch": "latest",
+    "systemjs": "0.19.25",
     "typescript": "^1.8.9",
     "typings": "^0.7.11"
   },
