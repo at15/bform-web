@@ -6,9 +6,9 @@ import {Component} from 'angular2/core';
 
 @Component({
     // TODO: is it possible to put this component inside a modal
-    selector:'bform-user-login',
-    styleUrls:['./assets/user/user.login.css'],
-    template:'<div >I am user login</div>'
+    selector: 'bform-user-login',
+    styleUrls: ['./assets/user/user.login.css'],
+    templateUrl: './assets/user/user.login.html'
 })
 export class UserLoginComponent {
 

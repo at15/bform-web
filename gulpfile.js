@@ -16,6 +16,11 @@ var sassOptions = {
 };
 var sassOutput = './src/assets';
 
+var templateFiles = [
+    './src/app/**/*.html'
+];
+var templateOutput = './src/assets';
+
 // npm run gulp mie, used for test if npm run can pass commandline arguments
 gulp.task('mie', function () {
     console.log('mie');
@@ -29,14 +34,21 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(sassOutput));
 });
 
+gulp.task('copy', function () {
+    return gulp
+        .src(templateFiles)
+        .pipe(gulp.dest(templateOutput));
+});
+
 gulp.task('watch', function () {
     return gulp
-        .watch(sassFiles, ['sass'])
+        .watch(sassFiles.concat(templateFiles), ['sass', 'copy'])
         .on('change', function (event) {
             console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
         });
 });
 
+// TODO: make it the build task
 gulp.task('default', function () {
     console.log('This is the default gulp task.');
 });

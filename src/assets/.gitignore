@@ -1,3 +1,4 @@
 # This folder contains compiled assets, both css and js
 
 *.css
+*.html
