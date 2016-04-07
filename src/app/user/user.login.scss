@@ -1,1 +1,16 @@
+@import "../style/layout/flex";
 
+#login-dialog-container {
+  @include center-parent;
+  height: 100%;
+}
+
+#login-dialog {
+  @include center-content;
+  background-color: white;
+}
+
+#title {
+  text-align: center;
+  font-size: 5em;
+}

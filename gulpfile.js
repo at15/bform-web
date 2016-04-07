@@ -8,7 +8,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var sassFiles = [
     './src/app/main.scss',
     './src/app/**/*.scss',
-    './src/app/style/vendor/*.scss'
+    './src/app/style/**/*.scss'
 ];
 var sassOptions = {
     errLogToConsole: true,

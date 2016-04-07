@@ -1,0 +1,36 @@
+// TODO: change them to mixins
+
+@mixin center-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-content {
+  flex: none;
+}
+
+// flexbox vertical algin from https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+.aligner {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+}
+
+.aligner-item {
+  flex: 1;
+}
+
+.aligner-item--top {
+  align-self: flex-start;
+}
+
+.aligner-item--bottom {
+  align-self: flex-end;
+}
+
+.aligner-item--fixed {
+  flex: none;
+  max-width: 50%;
+}
