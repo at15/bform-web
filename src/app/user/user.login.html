@@ -4,11 +4,11 @@
             Bform
         </div>
         <form>
-            <label for="name" class="sr-only">user name</label>
+            <label for="name" class="sr-only">User name</label>
             <input type="text" id="name" class="form-control" placeholder="User name" required="" autofocus="">
             <label for="pwd" class="sr-only">Password</label>
             <input type="password" id="pwd" class="form-control" placeholder="Password" required="">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onSubmit()">Sign in</button>
         </form>
     </div>
 </div>
