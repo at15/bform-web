@@ -1,0 +1,27 @@
+@import "../style/layout/flex";
+@import "../style/layout/util";
+
+.login-dialog-container {
+  @include center-parent;
+  height: 100%;
+}
+
+.login-dialog {
+  @include center-content;
+  background-color: white;
+  padding: 3em;
+  @include rounded();
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+}
+
+form {
+  button {
+    margin-top: 1em;
+    background-color: #619bc5;
+    border-color: #527aa3;
+  }
+}

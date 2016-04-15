@@ -1,3 +1,14 @@
-<div>
-    I am the new login form
+<div class="login-dialog-container">
+    <div class="login-dialog">
+        <div class="title">
+            Bform
+        </div>
+        <form>
+            <label for="name" class="sr-only">User name</label>
+            <input type="text" id="name" class="form-control" placeholder="User name" required="" autofocus="">
+            <label for="pwd" class="sr-only">Password</label>
+            <input type="password" id="pwd" class="form-control" placeholder="Password" required="">
+            <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onSubmit()">Sign in</button>
+        </form>
+    </div>
 </div>
