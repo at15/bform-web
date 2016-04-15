@@ -20,13 +20,15 @@
     <script>
         System.config({
             packages: {
-                app: {
+                // FIXME: should name it in app, but I put all the compiled file
+                // into assets folder in order to keep the source directory clean
+                assets: {
                     format: 'register',
                     defaultExtension: 'js'
                 }
             }
         });
-        System.import('app/main')
+        System.import('assets/main')
                 .then(null, console.error.bind(console));
     </script>
 </head>
