@@ -12,6 +12,7 @@
     "gulp": "gulp",
     "lite": "lite-server -c src/config/lite-server.json",
     "start": "concurrently \"npm run tsc:w\" \"npm run gulp watch\" \"npm run lite\" ",
+    "build": " npm run tsc && npm run gulp build",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
@@ -24,7 +25,7 @@
     "ng2-bootstrap": "^1.0.10",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
-    "zone.js":"^0.6.10"
+    "zone.js": "^0.6.10"
   },
   "devDependencies": {
     "concurrently": "^2.0.0",

@@ -48,6 +48,10 @@ gulp.task('watch', function () {
         });
 });
 
+gulp.task('build', ['sass', 'copy'], function () {
+    console.log('build finished');
+});
+
 // TODO: make it the build task
 gulp.task('default', function () {
     console.log('This is the default gulp task.');
