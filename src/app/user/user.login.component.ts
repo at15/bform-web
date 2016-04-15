@@ -18,11 +18,6 @@ export class UserLoginComponent {
 
     }
 
-    onSubmit() {
-        console.log('submit');
-        this.goToDashBoard();
-    }
-
     goToDashBoard() {
         this._router.navigate(['UserDashboard']);
     }
