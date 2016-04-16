@@ -10,12 +10,17 @@ import {UserLoginFormComponent} from './user.login-form.component';
     // TODO: is it possible to put this component inside a modal
     selector: 'bform-user-login',
     styleUrls: ['./assets/user/user.login.css'],
-    template: '<bform-user-login-form></bform-user-login-form>',
+    template: '<bform-user-login-form (loginSucceeded)="onLoginSucceeded($event)"></bform-user-login-form>',
     directives: [UserLoginFormComponent]
 })
 export class UserLoginComponent {
     constructor(private _router:Router) {
 
+    }
+
+    onLoginSucceeded(succeeded:boolean) {
+        console.log('login succeeded');
+        this.goToDashBoard();
     }
 
     goToDashBoard() {
